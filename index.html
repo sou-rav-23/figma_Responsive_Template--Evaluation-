@@ -10,15 +10,135 @@
             margin: 0;
 
         }
+        .container {
+            width: 1440px;
+            height: 1904px;
+            /* top: -478px;
+            left: 11750px; */
+            /* border: 2px solid red; */
+            margin: auto;
+
+        }
+        .header-section {
+            background-color: #434ccc;
+        }
+        .header {
+            
+            color: white;
+            text-align: center;
+            display: flex;
+            /* justify-content: space-between; */
+            position: relative;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid red; */
+            margin-left: 328px;
+        }
+        .logo {
+            width: 268px;
+            height: 233px;
+            border: 2px solid red;
+            margin-left: 0px;
+            margin-bottom: 71px;
+            padding-right: 31px;
+            display: flex;
+            justify-content: flex-end;           
+        }
+        .logo>h3{
+            border: 2px solid red;
+            width: 102px;
+            height: 48px;
+            font-family: DM Serif Display;
+            font-size: 40px;
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            /* border: 2px solid red; */
+            margin-right: 135px;
+        }
+        .nav ul li {
+            padding: 5px 10px;
+        }
+        .contact-info {
+            position: sticky;
+            margin-left: -528px;
+        }
+        .contact-title h1{
+            margin-top: 47px;
+            font-family: DM Serif Display;
+            font-size: 72px;
+            line-height: 80px;
+            text-align: center;
+            /* border: #71991d solid 2px; */
+            margin-bottom: 0;
+
+        }
+        .contact-subtitle p{
+            width: 324px;
+            height:32px;
+            font-family: DM Sans;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            margin: 10px auto 55px auto;
+            /* border: #71991d solid 2px; */
+        }
+        button {
+            color: white;
+            background-color: #434ccc;
+            border: 1px solid #ffff;
+            margin-left: 30px;
+            width: 170px;
+            height: 48px;
+            top: 16px;
+            left: 1135px;
+            gap: 0px;
+            opacity: 0px;
+
+        }
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .nav ul {
+            flex-direction: column;
+            gap: 5px;
+            }
+            .contact-title {
+            font-size: 24px;
+            }
+            .contact-subtitle {
+            font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <section class="navSection">
-            <nav>
-                
-            </nav>
-        </section>
+        <div class="header-section">
+            <header class="header">
+                <div class="logo"><h3>LOGO</h3></div>
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li>About</li>
+                            <li>Portfolio</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                            <button>Sign up</button>
+                        </ul>
+                        <div class="contact-info">
+                            <div class="contact-title"><h1>Contact</h1></div>
+                            <div class="contact-subtitle"><p>Pro eu apeirian suavitate dissentiet</p></div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+        </div>
     </div>
     
 </body>
