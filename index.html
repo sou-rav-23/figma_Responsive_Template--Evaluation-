@@ -1,145 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive_Template(Evaluation)</title>
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-
-        }
-        .container {
-            width: 1440px;
-            height: 1904px;
-            /* top: -478px;
-            left: 11750px; */
-            /* border: 2px solid red; */
-            margin: auto;
-
-        }
-        .header-section {
-            background-color: #434ccc;
-        }
-        .header {
-            
-            color: white;
-            text-align: center;
-            display: flex;
-            /* justify-content: space-between; */
-            position: relative;
-        }
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* border: 2px solid red; */
-            margin-left: 328px;
-        }
-        .logo {
-            width: 268px;
-            height: 233px;
-            border: 2px solid red;
-            margin-left: 0px;
-            margin-bottom: 71px;
-            padding-right: 31px;
-            display: flex;
-            justify-content: flex-end;           
-        }
-        .logo>h3{
-            border: 2px solid red;
-            width: 102px;
-            height: 48px;
-            font-family: DM Serif Display;
-            font-size: 40px;
-        }
-        .nav ul {
-            list-style: none;
-            display: flex;
-            gap: 10px;
-            /* border: 2px solid red; */
-            margin-right: 135px;
-        }
-        .nav ul li {
-            padding: 5px 10px;
-        }
-        .contact-info {
-            position: sticky;
-            margin-left: -528px;
-        }
-        .contact-title h1{
-            margin-top: 47px;
-            font-family: DM Serif Display;
-            font-size: 72px;
-            line-height: 80px;
-            text-align: center;
-            /* border: #71991d solid 2px; */
-            margin-bottom: 0;
-
-        }
-        .contact-subtitle p{
-            width: 324px;
-            height:32px;
-            font-family: DM Sans;
-            font-size: 20px;
-            line-height: 32px;
-            text-align: center;
-            margin: 10px auto 55px auto;
-            /* border: #71991d solid 2px; */
-        }
-        button {
-            color: white;
-            background-color: #434ccc;
-            border: 1px solid #ffff;
-            margin-left: 30px;
-            width: 170px;
-            height: 48px;
-            top: 16px;
-            left: 1135px;
-            gap: 0px;
-            opacity: 0px;
-
-        }
-        /* Responsive styles */
-        @media (max-width: 600px) {
-            .nav ul {
-            flex-direction: column;
-            gap: 5px;
-            }
-            .contact-title {
-            font-size: 24px;
-            }
-            .contact-subtitle {
-            font-size: 14px;
-            }
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style/style.css">
+  </head>
+  <body>
     <div class="container">
-        <div class="header-section">
-            <header class="header">
-                <div class="logo"><h3>LOGO</h3></div>
-                <div class="nav">
-                    <nav>
-                        <ul>
-                            <li>About</li>
-                            <li>Portfolio</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                            <button>Sign up</button>
-                        </ul>
-                        <div class="contact-info">
-                            <div class="contact-title"><h1>Contact</h1></div>
-                            <div class="contact-subtitle"><p>Pro eu apeirian suavitate dissentiet</p></div>
-                        </div>
-                    </nav>
+      <div class="header-section">
+        <header class="header">
+          <div class="logo"><h3>LOGO</h3></div>
+          <div class="menu-icon">☰</div>
+          <div class="nav">
+            <nav>
+              <ul>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <button>Sign up</button>
+              </ul>
+              <div class="contact-info">
+                <div class="contact-title"><h1>Contact</h1></div>
+                <div class="contact-subtitle">
+                  <p>Pro eu apeirian suavitate dissentiet</p>
                 </div>
-            </header>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
 
+      <section class="mid-section">
+        <div class="content-wrapper">
+          <img src="./assets/images/Bitmap.jpg" alt="Bitmap" />
+          <div class="pointer">
+            <img src="./assets/images/Group.png" alt="Pointer" />
+          </div>
         </div>
+
+        <div class="mid-container">
+          <div class="message-section">
+            <h2>Message</h2>
+            <form>
+              <div class="input">
+                <input type="text" placeholder="Your name" />
+                <input type="email" placeholder="Your email" />
+              </div>
+              <textarea placeholder="Your message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="info-section">
+            <h2>Info</h2>
+            <div class="info-div"><span class="info-image"><img src="./assets/images/Combined Shape.png" alt=""></span><small class="small">123 Blucint Acrilice, Mea  Homero Persequeris USA</small> </div>
+            <div class="info-div"><span class="info-image"><img src="./assets/images/Combined Shape (1).png" alt=""></span><p>123-4567890123</p></div>
+            <div class="info-div"><span class="info-image"><img src="./assets/images/Combined Shape (2).png" alt=""></span><p>info@gmail.com</p></div>
+            
+            <div class="social-media">
+              <div><img src="./assets/images/Path.png" alt="facebook" /></div>
+              <div><img src="./assets/images/Path (1).png" alt="tweeter" /></div>
+              <div><img src="./assets/images/Shape.png" alt="instagram" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="yellow">
+          <div class="yellow-section">
+            <div>
+              <h5>PERICULA</h5>
+              <h2>Mea modus volumus abhorreant</h2>
+            </div>
+            <div>
+              <input class="subscribe-input" type="email" placeholder="Email" />
+              <button class="subscribe-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    
-</body>
+  </body>
 </html>

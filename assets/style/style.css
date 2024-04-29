@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Shojumaru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Shojumaru&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1440px;
+  height: 1904px;
+  margin: auto;
+}
+.header-section {
+  background-color: #434ccc;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  display: flex;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 328px;
+}
+.logo {
+  width: 268px;
+  height: 233px;
+  margin-left: 0px;
+  margin-bottom: 71px;
+  padding-right: 31px;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo > h3 {
+  width: 102px;
+  height: 48px;
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  /* border: 2px solid red; */
+  margin-right: 135px;
+}
+.nav ul li {
+  padding: 5px 10px;
+}
+.contact-info {
+  position: sticky;
+  margin-left: -528px;
+}
+.contact-title h1 {
+  margin-top: 47px;
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: center;
+  /* border: #71991d solid 2px; */
+  margin-bottom: 0;
+}
+.contact-subtitle p {
+  width: fit-content;
+  height: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin: 10px auto 55px auto;
+  /* border: #71991d solid 2px; */
+}
+
+button {
+  color: white;
+  background-color: #434ccc;
+  border: 1px solid #ffff;
+  margin-left: 30px;
+  width: 170px;
+  height: 48px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.content-wrapper {
+  width: 1170px;
+  height: 640px;
+  margin: 64px 135px;
+  /* margin: auto; */
+  position: relative;
+  z-index: 0;
+  background-color: #f5f6fd;
+}
+.pointer {
+  width: 108px;
+  height: 108px;
+  position: absolute;
+  top: 269px;
+  left: 529px;
+  z-index: 11;
+  /* border: #cc7c43 2px solid ; */
+}
+
+.mid-section {
+  width: 1440px;
+  background-color: #f5f6fd;
+}
+.mid-container {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f6fd;
+  padding: 20px;
+  margin: auto;
+}
+.message-section {
+    margin-bottom: 0;
+}
+
+.message-section form {
+  width: 834px;
+  /* width: 401px */
+}
+.message-section .input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-section form input {
+    width: 401px;
+    height: 48px;
+    padding-left: 15px;
+}
+.message-section form input[type="text"] {
+    margin-right: 33px;
+}
+.message-section form textarea {
+  width: 96.2%;
+  height: 144px;
+  margin-top: 28px;
+  border: 1px 0px 0px 0px#DADADA solid;  
+  padding: 15px 15px ;
+}
+.message-section form button {
+  width: 170px;
+  height: 48px;
+  border-radius: 7px;
+  margin: 33px 1135px 79px 1px;
+}
+
+.info-section {
+    width: 50%;
+    text-align: left;
+    margin-left: 65px;
+}
+.message-section h2,.info-section h2 {
+    font-size: 56px;
+    font-family: "DM Serif Display";
+}
+
+.info-section .info-div {
+    width: 100%;      
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: flex-start;
+    margin-bottom: 57px;
+}
+.info-section  small{
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    /* margin: 350px 0px 42px 22px; */
+    color: #000000;
+    font-weight: normal;
+}
+.info-section .info-div p {
+    margin-right: 10px;
+    text-align: start;
+    font-weight: bold;
+    position: absolute;
+    left: 1170px
+}
+.info-div:last-child {
+    font-size: 16px;
+}
+.info-section .info-image {
+    width: 48px;
+    height: 48px;
+    margin-left: 0px;
+
+}
+.social-media {
+    /* border: #434ccc 2px solid ; */
+    width: fit-content;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.social-media div {
+    background-color: #434ccc;
+    height: 48px;
+    width: 48px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px ;
+}
+
+.yellow {
+  width: 1440px;
+  background-color: #ffdd78;
+  margin-top: 0;
+}
+.yellow-section {
+  width: 1170px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  margin: auto;
+}
+.yellow-section div {
+  display: grid;
+}
+.yellow-section div:last-child {
+  display: flex;
+}
+.yellow-section h5 {
+  width: 107px;
+  height: 24px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-align: left;
+}
+.yellow-section h2 {
+  width: 516px;
+  height: 128px;
+  font-family: "DM Serif Display", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  text-align: left;
+}
+
+.subscribe-input {
+  width: 370px;
+  height: 48px;
+  /* padding: 10px; */
+  border-radius: 5px;
+  margin: 160px 30px 144px 84px;
+  border: 0px;
+  padding-left: 15px;
+}
+.subscribe-button {
+  background-color: #434ccc;
+  color: white;
+  border: none;
+  margin: 160px 135px 144px 30px;
+  width: 170px;
+  height: 48px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 7px;
+
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none !important;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
